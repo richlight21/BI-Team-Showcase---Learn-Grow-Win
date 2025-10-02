@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BI Team Journey Showcase</title>
+  <style>
+    body {
+      font-family: "Segoe UI", sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f5f7fa;
+      color: #333;
+    }
+
+    header {
+      background: linear-gradient(to right, #002d72, #0033a0); /* Lightstone blues */
+      color: #fff;
+      padding: 1rem 2rem;
+      text-align: center;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 1.8rem;
+    }
+
+    nav {
+      background: #fff;
+      padding: 0.5rem;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      border-bottom: 1px solid #ddd;
+    }
+
+    nav button {
+      background: #002d72;
+      color: white;
+      border: none;
+      border-radius: 20px;
+      padding: 0.6rem 1.2rem;
+      margin: 0.3rem;
+      cursor: pointer;
+      font-size: 0.9rem;
+      transition: 0.3s;
+    }
+
+    nav button:hover {
+      background: #0033a0;
+    }
+
+    .section {
+      padding: 2rem 1rem;
+      max-width: 1100px;
+      margin: auto;
+    }
+
+    .section h2 {
+      text-align: center;
+      font-size: 1.6rem;
+      margin-bottom: 1rem;
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1rem;
+    }
+
+    details {
+      background: #fff;
+      border-radius: 8px;
+      border: 1px solid #ddd;
+      padding: 1rem;
+      box-shadow: 0 3px 6px rgba(0,0,0,0.06);
+      transition: 0.3s;
+    }
+
+    details:hover {
+      transform: translateY(-3px);
+    }
+
+    summary {
+      font-weight: bold;
+      cursor: pointer;
+      outline: none;
+    }
+
+    /* Team journey colours mapped from Lightstone palette */
+    .learning { border-left: 6px solid #da291c; }  /* Red */
+    .growing  { border-left: 6px solid #658d1b; }  /* Green */
+    .winning  { border-left: 6px solid #f2cd00; }  /* Yellow */
+
+    .member-card {
+      display: flex;
+      align-items: flex-start;
+      gap: 10px;
+      margin-top: 0.5rem;
+    }
+
+    .thumb {
+      width: 50px;
+      height: 50px;
+      object-fit: cover;
+      border-radius: 50%;
+      border: 2px solid #ddd;
+      flex-shrink: 0;
+    }
+
+    footer {
+      text-align: center;
+      padding: 1rem;
+      background: #fff;
+      border-top: 1px solid #ddd;
+      font-size: 0.85rem;
+    }
+
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 1.4rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>🚀 BI Team Journey Showcase</h1>
+    <p>Reflecting on Learning, Growing, and Winning Together</p>
+  </header>
+
+  <nav>
+    <button onclick="document.getElementById('learning').scrollIntoView({behavior:'smooth'})">📚 Learning</button>
+    <button onclick="document.getElementById('growing').scrollIntoView({behavior:'smooth'})">🌱 Growing</button>
+    <button onclick="document.getElementById('winning').scrollIntoView({behavior:'smooth'})">🏆 Winning</button>
+  </nav>
+
+  <!-- Learning Section -->
+  <section class="section" id="learning">
+    <h2>📚 Learning</h2>
+    <div class="cards">
+      <details class="learning">
+        <summary>Theveshan</summary>
+        <div class="member-card">
+          <img src="Team Photos/Theveshan.png" alt="Theveshan" class="thumb">
+          <p>⚡ We are building new skills by making use of our weekly training slots and by learning more about the different areas of the business we support.</p>
+        </div>
+      </details>
+      <details class="learning">
+        <summary>Prudence</summary>
+        <div class="member-card">
+          <img src="Team Photos/Prudence Avatar.jpg" alt="Prudence" class="thumb">
+          <p>⚡ I’m always picking up new things in Power BI updates, DAX tricks, and data modeling so I can keep up with changes. I also get good ideas from the Analytics sessions called 'Groove and Grow', seeing how other developers approach their work.</p>
+        </div>
+      </details>
+      <details class="learning">
+        <summary>Sello</summary>
+        <div class="member-card">
+          <img src="Team Photos/Sello.png" alt="Sello" class="thumb">
+          <p>⚡ We keep our focus mostly on how process fails and share ideas on how we can enhance and improve them which contributes towards our continuous learning.</p>
+        </div>
+      </details>
+      <details class="learning">
+        <summary>Thobani</summary>
+        <div class="member-card">
+          <img src="Team Photos/Thobani.png" alt="Thobani" class="thumb">
+          <p>⚡ What have we learned, we learned that the Analytics team also show case the same end results as we do for example the vehicles sales, would be interesting to know if they use the same data source as we do, if not then we could compare the data. As a team we are also learning that we are not ready yet to fully migrate to DM as we keep on finding out that we are still missing some fields which are not populated in DM. Mistakes are part of life, therefore we still make mistakes of underestimating the work that needs to be done, but we are trying to learn from these mistakes.</p>
+        </div>
+      </details>
+      <details class="learning">
+        <summary>Akhil</summary>
+        <div class="member-card">
+          <img src="Team Photos/Akhil.png" alt="Akhil" class="thumb">
+          <p>⚡ We are continuously discovering new ways to improve our Qlik apps, making the environment more robust and optimized. Mistakes do occur as we balance multiple workloads, but we see them as opportunities to learn, ensuring we don’t repeat the same errors. This mindset strengthens our ability to adapt and enhances our effectiveness as a team.</p>
+        </div>
+      </details>
+      <details class="learning">
+        <summary>Richard</summary>
+        <div class="member-card">
+          <img src="Team Photos/Richard.png" alt="Richard" class="thumb">
+          <p>⚡ I’m focusing on learning new languages relevant to the analytics space, with Python being my main priority right now. As a team, we hold each other accountable for dedicating time to learning, often sharing challenges and solutions through our JAD sessions. Mistakes are part of the process when working with data, and we view them as opportunities to better understand flows, methodologies, and solutions to logical issues.</p>
+        </div>
+      </details>
+    </div>
+  </section>
+
+  <!-- Growing Section -->
+  <section class="section" id="growing">
+    <h2>🌱 Growing</h2>
+    <div class="cards">
+      <details class="growing">
+        <summary>Theveshan</summary>
+        <div class="member-card">
+          <img src="Team Photos/Theveshan.png" alt="Theveshan" class="thumb">
+          <p>🌱 We are pushing ourselves outside of our comfort zones by doing things that challenge us, such as presenting at staff updates, contributing in A-Team Groove and Grow sessions, and attending client meetings with the RISE team.</p>
+        </div>
+      </details>
+      <details class="growing">
+        <summary>Prudence</summary>
+        <div class="member-card">
+          <img src="Team Photos/Prudence Avatar.jpg" alt="Prudence" class="thumb">
+          <p>🌱 The way we built reports before won’t always meet today’s needs, so we’re focusing more on making reports consistent and easier to maintain.</p>
+        </div>
+      </details>
+      <details class="growing">
+        <summary>Sello</summary>
+        <div class="member-card">
+          <img src="Team Photos/Sello.png" alt="Sello" class="thumb">
+          <p>🌱 No task is too easy or too hard – We all get to have an opportunity to work on tasks that are of any level as this helps us to either grow in skills we do not possess or reinforces what we already know.</p>
+        </div>
+      </details>
+      <details class="growing">
+        <summary>Thobani</summary>
+        <div class="member-card">
+          <img src="Team Photos/Thobani.png" alt="Thobani" class="thumb">
+          <p>🌱 We are taking on and tackling big initiatives together such as optimizing apps and every team member has contributed by optimizing legacy apps which has improved our environment drastically, Doing so has helped us grow together making sure the level of knowledge is shared and understood amongst each other.”</p>
+        </div>
+      </details>
+      <details class="growing">
+        <summary>Akhil</summary>
+        <div class="member-card">
+          <img src="Team Photos/Akhil.png" alt="Akhil" class="thumb">
+          <p>🌱 Our growth comes from taking initiatives to fine‑tune the environment for peak performance, while also adapting to changes within the organization by integrating new products into the Qlik structure. Through JAD sessions and frequent team discussions, we share progress, identify areas for improvement, and collaborate on innovations such as benchmarking reports that not only improve our environment but also create value for the wider organization.</p>
+        </div>
+      </details>
+      <details class="growing">
+        <summary>Richard</summary>
+        <div class="member-card">
+          <img src="Team Photos/Richard.png" alt="Richard" class="thumb">
+          <p>🌱 Growth comes from accountability — both individually and as a team. We focus on owning our projects, seeking ways to improve them, and finding opportunities to innovate. By engaging closely with users and closing feedback loops, we can better anticipate their needs. At the same time, we need to continually encourage one another to meet higher standards so that we can enforce growth on a team and individual level.</p>
+        </div>
+      </details>
+    </div>
+  </section>
+
+  <!-- Winning Section -->
+  <section class="section" id="winning">
+    <h2>🏆 Winning</h2>
+    <div class="cards">
+      <details class="winning">
+        <summary>Theveshan</summary>
+        <div class="member-card">
+          <img src="Team Photos/Theveshan.png" alt="Theveshan" class="thumb">
+          <p>🏆 Winning for us means celebrating each other’s successes, both big and small. By recognizing individual contributions and collective achievements, we reinforce a culture of encouragement and accountability.</p>
+        </div>
+      </details>
+      <details class="winning">
+        <summary>Prudence</summary>
+        <div class="member-card">
+          <img src="Team Photos/Prudence Avatar.jpg" alt="Prudence" class="thumb">
+          <p>🏆 Winning is about the whole team, not just one person. For me, it’s when our reports are reliable, easy to use, and actually help the business. We win together when we all take ownership, back each other up, and celebrate the results.</p>
+        </div>
+      </details>
+      <details class="winning">
+        <summary>Sello</summary>
+        <div class="member-card">
+          <img src="Team Photos/Sello.png" alt="Sello" class="thumb">
+          <p>🏆 I would describe our Team motto as “We Learn to Grow, and We Grow to Win”, both individually and collectively as a team.</p>
+        </div>
+      </details>
+      <details class="winning">
+        <summary>Thobani</summary>
+        <div class="member-card">
+          <img src="Team Photos/Thobani.png" alt="Thobani" class="thumb">
+          <p>🏆 We are winning together because we all have a positive attitude and want to keep everybody happy including our clients.
+
+We are also losing together because of some changes that were done by IT but also winning together cause IT has been involved and helpful in rectify these issues.</p>
+        </div>
+      </details>
+      <details class="winning">
+        <summary>Akhil</summary>
+        <div class="member-card">
+          <img src="Team Photos/Akhil.png" alt="Akhil" class="thumb">
+          <p>🏆 For us, winning is not about competition but about maintaining standards, keeping work up to the mark, and ensuring steady flow. Success comes from team effort rather than individuals, and even when progress is slow, we support one another, uplift the team spirit, and keep things moving forward — ensuring that achievements naturally follow from our collective consistency and collaboration.</p>
+        </div>
+      </details>
+      <details class="winning">
+        <summary>Richard</summary>
+        <div class="member-card">
+          <img src="Team Photos/Richard.png" alt="Richard" class="thumb">
+          <p>🏆 For us, i'd like to think there are no losers. We support one another by openly sharing our growth areas and challenging ourselves to do better. I’m proud of the team’s ability to collaborate, learn from each other, and continuously push forward. Our success will lye in keeping innovation at the forefront and consistently raising the bar together.</p>
+        </div>
+      </details>
+    </div>
+  </section>
+
+  <footer>
+    ✨ BI Team — Turning Learning into Growth, and Growth into Winning Together ✨
+  </footer>
+
+</body>
+</html>
